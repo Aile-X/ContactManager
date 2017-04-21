@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aile_music" />
+            <option value="$PROJECT_DIR$/comhuhang360" />
+            <option value="$PROJECT_DIR$/contactManager" />
+            <option value="$PROJECT_DIR$/debug10_zhifubao" />
+            <option value="$PROJECT_DIR$/debug1_ListView_Product" />
+            <option value="$PROJECT_DIR$/debug2_Listview_Stu" />
+            <option value="$PROJECT_DIR$/debug5_OnlineDownloadMusic" />
+            <option value="$PROJECT_DIR$/debug6_sqlite_SQLiteOpenHelper" />
+            <option value="$PROJECT_DIR$/debug7_sqlite_ContentProvider" />
+            <option value="$PROJECT_DIR$/debug8_sqlite_ContentResolver" />
+            <option value="$PROJECT_DIR$/debug9_TMusicPlayer" />
+            <option value="$PROJECT_DIR$/javatest" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

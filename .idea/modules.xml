@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AileResource.iml" filepath="$PROJECT_DIR$/AileResource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aile_music/aile_music.iml" filepath="$PROJECT_DIR$/aile_music/aile_music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comhuhang360/comhuhang360.iml" filepath="$PROJECT_DIR$/comhuhang360/comhuhang360.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactManager/contactManager.iml" filepath="$PROJECT_DIR$/contactManager/contactManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug10_zhifubao/debug10_zhifubao.iml" filepath="$PROJECT_DIR$/debug10_zhifubao/debug10_zhifubao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug1_ListView_Product/debug1_ListView_Product.iml" filepath="$PROJECT_DIR$/debug1_ListView_Product/debug1_ListView_Product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug2_Listview_Stu/debug2_Listview_Stu.iml" filepath="$PROJECT_DIR$/debug2_Listview_Stu/debug2_Listview_Stu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug5_OnlineDownloadMusic/debug5_OnlineDownloadMusic.iml" filepath="$PROJECT_DIR$/debug5_OnlineDownloadMusic/debug5_OnlineDownloadMusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug6_sqlite_SQLiteOpenHelper/debug6_sqlite_SQLiteOpenHelper.iml" filepath="$PROJECT_DIR$/debug6_sqlite_SQLiteOpenHelper/debug6_sqlite_SQLiteOpenHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug7_sqlite_ContentProvider/debug7_sqlite_ContentProvider.iml" filepath="$PROJECT_DIR$/debug7_sqlite_ContentProvider/debug7_sqlite_ContentProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug8_sqlite_ContentResolver/debug8_sqlite_ContentResolver.iml" filepath="$PROJECT_DIR$/debug8_sqlite_ContentResolver/debug8_sqlite_ContentResolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debug9_TMusicPlayer/debug9_TMusicPlayer.iml" filepath="$PROJECT_DIR$/debug9_TMusicPlayer/debug9_TMusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javatest/javatest.iml" filepath="$PROJECT_DIR$/javatest/javatest.iml" />
+    </modules>
+  </component>
+</project>

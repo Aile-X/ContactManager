@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ProviderInfo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/debug8_sqlite_ContentResolver/libs/ProviderInfo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

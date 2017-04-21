@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通话记录主界面子布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#fcfcfc" >
+
+    <ImageView
+        android:id="@+id/call_log_contact_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:src="@drawable/default_contacts_photo" />
+
+    <TextView
+        android:id="@+id/call_log_count_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_log_incoming"
+        android:gravity="center"
+        android:paddingRight="24dp"
+        android:text="99+"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/call_log_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/call_log_contact_photo"
+        android:layout_toRightOf="@id/call_log_contact_photo"
+        android:paddingTop="4dp"
+        android:text="联系人"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/call_log_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/call_log_contact_photo"
+        android:layout_toRightOf="@id/call_log_contact_photo"
+        android:paddingBottom="4dp"
+        android:text="10小时之前"
+        android:textSize="14sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/call_log_phone_number"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@id/call_log_contact_name"-->
+        <!--android:layout_toRightOf="@id/call_log_contact_name"-->
+        <!--android:text="13911111111"-->
+        <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

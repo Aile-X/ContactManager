@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<!-- 最上面的三个导航按钮,代码中用的片段知识.-->
+    <LinearLayout
+        android:id="@+id/main_top_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#fcfcfc"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/main_top_bar_call_log_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:src="@drawable/top_bar_call" />
+
+        <ImageButton
+            android:id="@+id/main_top_bar_sms_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:src="@drawable/top_bar_sms" />
+
+        <ImageButton
+            android:id="@+id/main_top_bar_contacts_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:src="@drawable/top_bar_contact" />
+    </LinearLayout>
+<!-- 这是三个片段的相同的布局,用的是帧布局 -->
+    <FrameLayout
+        android:id="@+id/main_fragment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_top_bar_layout"
+        android:background="#fcfcfc" >
+    </FrameLayout>
+
+</RelativeLayout>

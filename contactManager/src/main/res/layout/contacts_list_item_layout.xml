@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是联系人主界面的子布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcfcfc" >
+
+    <ImageView
+        android:id="@+id/contact_list_item_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:src="@drawable/default_contacts_photo" />
+
+    <TextView
+        android:id="@+id/contact_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_list_item_photo"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/contact_list_item_photo"
+        android:padding="4dp"
+        android:text="联系人"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

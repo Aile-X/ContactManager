@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 欢迎界面的布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center">
+<!-- gravity设置内容的居中. -->
+    <ImageView 
+      android:id="@+id/logo"
+      android:layout_gravity="bottom"
+      android:src="@drawable/welcome_logo"
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent"
+      />
+
+</RelativeLayout>

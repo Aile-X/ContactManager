@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 短信显示界面的子布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc" >
+<!-- 固定图片的大小48原则,padding设置内间距. -->
+    <ImageView
+        android:id="@+id/sms_thread_list_item_contact_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:src="@drawable/default_contacts_photo" />
+
+    <TextView
+        android:id="@+id/sms_thread_list_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sms_thread_list_item_contact_photo"
+        android:layout_toRightOf="@id/sms_thread_list_item_contact_photo"
+        android:padding="4dp"
+        android:text="13911111111"
+        android:textColor="#000"
+        android:textSize="16sp" />
+<!-- 显示短信内容,但只能显示一行. -->
+    <TextView
+        android:id="@+id/sms_thread_list_item_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sms_thread_list_item_contact_photo"
+        android:layout_toRightOf="@id/sms_thread_list_item_contact_photo"
+        android:padding="4dp"
+        android:singleLine="true"
+        android:text="短信内容！！！"
+        android:textColor="#000"
+        android:textSize="18sp" />
+<!-- 和谁顶端对齐. -->
+    <TextView
+        android:id="@+id/sms_thread_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/sms_thread_list_item_contact_photo"
+        android:padding="4dp"
+        android:text="刚刚"
+        android:textSize="14sp" />
+
+</RelativeLayout>

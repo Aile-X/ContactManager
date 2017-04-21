@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是联系人主界面跳转后的子界面的指定的联系人的详细信息. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_detail_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/contact_detail_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/default_contacts_photo" />
+
+        <TextView
+            android:id="@+id/contact_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/contact_detail_photo"
+            android:text="联系人" />
+    </RelativeLayout>
+
+</LinearLayout>

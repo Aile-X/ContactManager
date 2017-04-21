@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/call_log_bottom_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fcfcfc" >
+
+        <ImageButton
+            android:id="@+id/keyboard_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#0000"
+            android:src="@drawable/keyboard_show" />
+
+        <ImageButton
+            android:id="@+id/call_log_show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#0000"
+            android:src="@drawable/call_log_type_all" />
+
+        <ImageButton
+            android:id="@+id/call_log_show_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/call_log_show_all"
+            android:background="#0000"
+            android:src="@drawable/call_log_type_in" />
+
+        <ImageButton
+            android:id="@+id/call_log_show_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/call_log_show_in"
+            android:background="#0000"
+            android:src="@drawable/call_log_type_out" />
+
+        <ImageButton
+            android:id="@+id/call_log_show_miss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/call_log_show_out"
+            android:background="#0000"
+            android:src="@drawable/call_log_type_miss" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/call_log_show_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/call_log_bottom_bar_layout"
+        android:cacheColorHint="#0000" />
+
+    <!-- 下面都是定义打电话键盘布局 -->
+
+    <LinearLayout
+        android:id="@+id/call_log_keyboard_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fcfcfc"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- 这个是键盘布局中的三个按钮,完成键盘隐藏,打电话按钮,和删除号码 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_line_bg" >
+
+            <ImageButton
+                android:id="@+id/keyboard_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#0000"
+                android:src="@drawable/hide_keyboard_background_selector" />
+
+            <ImageButton
+                android:id="@+id/keyboard_backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#0000"
+                android:src="@drawable/backspace_background_selector" />
+            <!-- 以省略号开头,单行 -->
+
+            <Button
+                android:id="@+id/keyboard_call_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/keyboard_backspace"
+                android:layout_toRightOf="@id/keyboard_hide"
+                android:background="@drawable/dail_call_background_selector"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 123 -->
+        <!-- 下面就是1-#的具体布局 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/keyboard_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_1" />
+
+            <ImageButton
+                android:id="@+id/keyboard_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_2" />
+
+            <ImageButton
+                android:id="@+id/keyboard_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_3" />
+        </LinearLayout>
+
+        <!-- 456 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/keyboard_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_4" />
+
+            <ImageButton
+                android:id="@+id/keyboard_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_5" />
+
+            <ImageButton
+                android:id="@+id/keyboard_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_6" />
+        </LinearLayout>
+
+        <!-- 789 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/keyboard_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_7" />
+
+            <ImageButton
+                android:id="@+id/keyboard_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_8" />
+
+            <ImageButton
+                android:id="@+id/keyboard_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_9" />
+        </LinearLayout>
+
+        <!-- *0# -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/keyboard_star"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_star" />
+
+            <ImageButton
+                android:id="@+id/keyboard_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_0" />
+
+            <ImageButton
+                android:id="@+id/keyboard_hash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/keyboard_background_selector"
+                android:src="@drawable/keyboard_hash" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

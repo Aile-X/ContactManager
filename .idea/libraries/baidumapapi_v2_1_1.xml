@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="baidumapapi_v2_1_1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/comhuhang360/libs/baidumapapi_v2_1_1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

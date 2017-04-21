@@ -1,0 +1,3 @@
+include ':contactManager', ':debug1_ListView_Product', ':debug2_Listview_Stu', ':debug5_OnlineDownloadMusic', ':debug6_sqlite_SQLiteOpenHelper', ':debug7_sqlite_ContentProvider', ':debug8_sqlite_ContentResolver', ':debug9_TMusicPlayer', ':javatest', ':aile_music'
+include ':debug10_zhifubao'
+include ':comhuhang360'
